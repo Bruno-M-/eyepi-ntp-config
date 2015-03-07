@@ -1,0 +1,13 @@
+Source: eyepi-ntp-config
+Section: admin
+Priority: important
+Maintainer: Bruno Maitre <bruno.maitre@gmail.com>
+Build-Depends: debhelper (>= 7.0.0~), config-package-dev (>= 5.0), ntp
+Standards-Version: 3.9.2
+
+Package: eyepi-ntp-config
+Architecture: all
+Depends: ${misc:Depends}, ntp
+Provides: ${diverted-files}
+Conflicts: ${diverted-files}
+Description: Eye Pi ntp configuration
